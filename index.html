@@ -1,0 +1,119 @@
+<!doctype HTML>
+
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./css/font.css">
+		<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./js/masonry.pkgd.min.js"></script>
+		<title>Койотий сайт</title>
+	</head>
+
+	<body>
+		<header>
+			<section class="contact-icons">
+				<div class="contact-icons__item icon-mail"></div>
+				<div class="contact-icons__item icon-facebook2"></div>
+				<div class="contact-icons__item icon-instagram"></div>
+			</section>
+			<nav class="top-nav">
+				<div class="top-nav__item">Science</div>
+				<div class="top-nav__item">Human</div>
+				<div class="top-nav__item">Society</div>
+			</nav>
+		</header>
+
+		<section class="article-list js-masonry">
+			<div class="grid-sizer article-list__item">
+				<img class="article-list__image" src="assets/11.jpg">
+				<h1 class="article-list__item-title">
+					Super title
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/8.jpg">
+				<h1 class="article-list__item-title">
+					Badass title
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/6.jpg">
+				<h1 class="article-list__item-title">
+					Another super title and a quite long one
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/3.jpg">
+				<h1 class="article-list__item-title">
+					Mindblowing title
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/12.jpg">
+				<h1 class="article-list__item-title">
+					Title to die for
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/5.jpg">
+				<h1 class="article-list__item-title">
+					Awesome title
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/1.jpg">
+				<h1 class="article-list__item-title">
+					Colossal title
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/2.jpg">
+				<h1 class="article-list__item-title">
+					The title that will make you believe
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/7.jpg">
+				<h1 class="article-list__item-title">
+					Exciting title
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/9.jpg">
+				<h1 class="article-list__item-title">
+					Intriguing title
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/4.jpg">
+				<h1 class="article-list__item-title">
+					A title which makes you think about sex
+				</h1>
+			</div>
+			<div class="article-list__item">
+				<img class="article-list__image" src="assets/10.jpg">
+				<h1 class="article-list__item-title">
+					Stupid title (there always should be one)
+				</h1>
+			</div>
+		</section>
+	</body>
+
+</html>
+
+<script>
+
+$(document).ready(function($){
+	var $container = $('.js-masonry');
+	setTimeout(function(){
+		// initialize
+		$container.masonry({
+			columnWidth: '.grid-sizer',
+			itemSelector: '.article-list__item',
+			gutter: 20
+		});
+	}, 100);
+});
+</script>
